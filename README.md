@@ -16,13 +16,14 @@ Theme and Template Files: https://github.com/xelloadamsawicki/assignment/tree/ma
   - First, I created a very basic WordPress theme named Xello of course
   - Because this is a one page website, the page template is named `front-page.php`
   - I decided to use SASS for the CSS preprocessor
-  - SASS and JS files are run through Gulp to concatenate and uglify
+  - SASS and JS files are run through Gulp to concatenate, minify, and uglify
   - I'm using a few very popular tried and tested WordPress plugins to accomplish some tasks (they are listed below)
 
 ## Regarding the Editable Regions Requirement:
-  - Pretty much the entire template is editable
+  - Pretty much the entire page template is editable
   - To edit the page
     - Log into http://www.adamsawicki.com/xello/wp-admin
+      - Use credentials I provided via email
     - Click on **Pages** in the left menu
     - Click on **Home**
     - Feel free to edit any of the fields then click on **Update**
@@ -31,6 +32,7 @@ Theme and Template Files: https://github.com/xelloadamsawicki/assignment/tree/ma
   - To test form
     - Fill out the form on the front-end
     - Log into http://www.adamsawicki.com/xello/wp-admin
+      - Use credentials I provided via email
     - Use credentials I proved via email
     - Hover over **Flamingo** in the left menu and click on **Inbound Messages**
 
