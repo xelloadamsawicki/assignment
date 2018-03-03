@@ -43,6 +43,8 @@ Theme and Template Files: https://github.com/xelloadamsawicki/assignment/tree/ma
   - All of the above can be handled through the WordPress admin without ever needing to jump back into the code.
   - Additionally, when more content is added, a good WordPress SEO plugin can help to double-check and make sure the admin hasn't forgotten something.
     - One such good and popular plugin is Yoast SEO (https://wordpress.org/plugins/wordpress-seo/)
+  - Additionally, I enabled the following WordPress option, because I don't think this site being indexed by Google is beneficial to anyone. On a live (non-assignment) site, this option would *not* be enabled:
+    - Search Engine Visibility: `Discourage search engines from indexing this site`
 
 ## Tech Used:
 - WordPress 4.9.4
