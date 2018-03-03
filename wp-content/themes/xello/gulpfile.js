@@ -20,13 +20,13 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('uglify', function() {
-  return gulp.src('./assets/js-dist/*.js')
+  return gulp.src('./assets/dist/js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('assets/js-dist'));
+    .pipe(gulp.dest('assets/dist/js/'));
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./assets/css/**/*.sass', ['sass']);
+  gulp.watch('./assets/sass/**/*.sass', ['sass']);
   gulp.watch('./assets/js/*.js', ['scripts', 'uglify']);
 });
 

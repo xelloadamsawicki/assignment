@@ -24,7 +24,7 @@
 
     <div class="container">
 
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="d-flex w-100">
           <a class="mr-auto navbar-brand" href="/">
             <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/xello-logo-white.svg" alt="Xello" />
@@ -44,12 +44,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link-03</a>
             </li>
-            <li class="nav-item d-xs-block d-sm-none">
+            <li class="nav-item d-xs-block d-md-none">
               <a class="nav-link" href="#">FR</a>
             </li>
           </ul>
         </div>
-        <span class="navbar-text small mt-1 w-100 text-right d-none d-sm-block">
+        <span class="navbar-text small mt-1 w-100 text-right d-none d-md-block">
           <a href="#">FR</a>
         </span>
       </nav>
