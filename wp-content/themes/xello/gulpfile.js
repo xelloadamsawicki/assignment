@@ -1,16 +1,33 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-
-gulp.task('default', function() {
-  //
-});
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 gulp.task('sass', function () {
-  return gulp.src('./assets/css/style.sass')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./'));
+  return gulp.src('./assets/sass/main.sass')
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(gulp.dest('./assets/dist/css/'));
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./assets/css/*.sass', ['sass']);
+gulp.task('scripts', function() {
+  gulp.src([
+    './node_modules/popper.js/dist/js/popper.min.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js',
+    './assets/js/*.js',
+  ])
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('./assets/dist/js/'));
 });
+
+gulp.task('uglify', function() {
+  return gulp.src('./assets/js-dist/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('assets/js-dist'));
+});
+
+gulp.task('watch', function () {
+  gulp.watch('./assets/css/**/*.sass', ['sass']);
+  gulp.watch('./assets/js/*.js', ['scripts', 'uglify']);
+});
+
+gulp.task('default', ['sass', 'scripts', 'uglify']);

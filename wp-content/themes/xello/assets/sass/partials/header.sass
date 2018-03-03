@@ -1,0 +1,25 @@
+ul.navbar-nav
+  @include media-breakpoint-down(xs)
+    margin: 1rem 0 0
+  li
+    @include media-breakpoint-up(md)
+      margin: 0 0.75rem
+.jumbotron
+  margin: 0
+  background: $blue
+  color: $text-light
+  padding: 0 2rem 2rem
+  @include media-breakpoint-up(sm)
+    padding: 0 2rem  
+  .header-image
+    img
+      max-width: 100%
+      height: auto
+      margin: 1.5rem 0
+      @include media-breakpoint-up(sm)
+        margin: 3rem 0 -10px
+  .header-content
+    >div
+      min-height: 100%
+    p
+      color: $text-light

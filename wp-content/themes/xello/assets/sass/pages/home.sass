@@ -1,0 +1,47 @@
+body.home
+  .section
+    padding: 1.5rem
+    @include media-breakpoint-up(md)
+      padding: 3rem 6rem
+    img
+      @include media-breakpoint-down(sm)
+        margin: 1.5rem auto 3rem
+  .section-1
+    background: $body
+    border: 1px solid $border
+    form
+      @include media-breakpoint-down(xs)
+        margin: 3rem 0 0
+      .wpcf7-checkbox
+        .wpcf7-list-item
+          margin: 0
+      .wpcf7-not-valid-tip
+        margin: 0.25rem
+        color: $pink
+      .wpcf7-response-output
+        margin: 0
+        padding: 0
+        border: none
+      .wpcf7-validation-errors
+        color: $pink
+      .wpcf7-mail-sent-ok
+        color: $green
+  .section-4
+    >div
+      border-top: 1px solid $border
+      border-bottom: 1px solid $border
+      padding: 3rem 0
+      @include media-breakpoint-up(sm)
+        padding: 3rem 6rem
+      img
+        margin: 0 0 1rem
+  .section-5
+    .feature
+      padding: 0 1rem
+      @include media-breakpoint-up(lg)
+        padding: 0 2rem
+      h3
+        margin: 0.5rem 0
+      img
+        margin: 1.5rem 0 1rem
+        padding: 0 2rem

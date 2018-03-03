@@ -1,0 +1,39 @@
+body
+  background: $body
+  font-size: 14px
+  h1
+    font-size: 2rem
+    @include media-breakpoint-up(md)
+      font-size: 2.5rem
+    @include media-breakpoint-up(lg)
+      font-size: 3rem
+  h2, h3
+    font-weight: 300
+    color: $text-grey
+  h2
+    font-size: 1.5rem
+    @include media-breakpoint-up(md)
+      font-size: 1.75rem
+    @include media-breakpoint-up(lg)
+      font-size: 2rem
+  h3
+    font-size: 1rem
+    @include media-breakpoint-up(md)
+      font-size: 1.25rem
+    @include media-breakpoint-up(lg)
+      font-size: 1.5rem
+  p
+    color: $text-dark
+  p.section-title
+    margin: 0 0 0.25rem
+    font-size: 0.7rem
+    text-transform: uppercase
+  button.btn
+    margin: 1.5rem 0 0
+    padding: 0.5rem 3rem
+    border-radius: 4rem
+  .container
+    @include media-breakpoint-down(sm)
+      padding: 0
+    main
+      background: $body-light
